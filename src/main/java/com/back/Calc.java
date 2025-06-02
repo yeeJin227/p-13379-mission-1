@@ -13,6 +13,8 @@ public class Calc {
             result =  num1+num2;
         } else if(expressionBits[1].equals("-")){
             result = num1-num2;
+        } else if (expressionBits[1].equals("*")) {
+            result = num1*num2;
         }
 
         for(int i = 3; i<expressionBits.length; i++){
@@ -20,9 +22,10 @@ public class Calc {
                 result += Integer.parseInt(expressionBits[i+1]);
             } else if(expressionBits[i].equals("-")){
                 result -= Integer.parseInt(expressionBits[i+1]);
+            } else if (expressionBits[i].equals("*")) {
+                result *= Integer.parseInt(expressionBits[i+1]);
             }
         }
-
 
         return result;
     }
