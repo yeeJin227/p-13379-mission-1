@@ -17,4 +17,9 @@ public class CalcTest {
         assertThat(Calc.run("2 + 1")).isEqualTo(3);
     }
 
+    @Test
+    @DisplayName("2 + 2 == 4")
+    void t3() {
+        assertThat(Calc.run("2 + 2")).isEqualTo(4);
+    }
 }
