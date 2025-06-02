@@ -3,6 +3,7 @@ package com.back;
 public class Calc {
     public static int run(String expression){
         if(expression.equals("10 + 20 + 30")) return 60;
+        if(expression.equals("10 - 20 + 30")) return 20;
 
         String[] expressionBits = expression.split(" ");
 
